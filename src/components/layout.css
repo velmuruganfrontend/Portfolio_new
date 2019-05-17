@@ -4,3 +4,4 @@ body{margin: 0px;padding: 0px;font-family: -apple-system,BlinkMacSystemFont,Sego
 a {text-decoration: none;}
 ul{margin: 0px;padding: 0px}
 li{list-style-type: none}
+.remove-icon::after{display: none}

@@ -28,23 +28,44 @@ ${tw`flex flex-wrap`}
 }
 li{
     flex: 0 0 50%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    a{
+        display:block;
+        padding: 15px 10px;
+    }
+    &:nth-last-child(-n+2){margin-bottom:0px}
 }
 `
 const Grid = styled.div`
-${tw`flex`}  
-`
-const Left = styled.div`
-width:144px;
-${`tw bg-black`}
-img{
-    width:144px 
-    height:144px
+${tw`flex`}
+small{
+    background-color: rgb(77,77,77);
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    opacity:0;
+    &:before{
+        content:'',
+
+    }
+} 
+&:hover small{
+    opacity:1;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 3px;
 } 
 `
-const Right = styled.div`
-flex: 0 0 80%
+const Left = styled.div`
+flex: 0 0 30%;
 ${tw``} 
+`
+const Right = styled.div`
+flex: 0 0 70%;
+${tw`pl-4`}
+h2{color: rgb(51, 51, 51);font-weight:400}
+span{color:red} 
 `
 
 const works = () => {
@@ -89,6 +110,7 @@ const works = () => {
                                             <span>{edge.node.frontmatter.date}</span>
                                             <p>{edge.node.frontmatter.description}</p>
                                         </Right>
+                                        <small>Read More</small>
                                     </Grid>
                                   </Link>
                               </li>
