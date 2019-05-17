@@ -6,6 +6,11 @@ import UserImg from '../images/velmurugan.jpg'
 
 const Main = styled.main`
 width:1024px;
+@media (max-width: 1024px) {
+    width:100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 ${tw`pt-20 m-auto px-6`} 
 `
 const HomePage = styled.section`

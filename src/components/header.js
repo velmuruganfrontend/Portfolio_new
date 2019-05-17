@@ -9,10 +9,14 @@ background-color:rgb(250, 250, 250);
 border-bottom: 1px solid rgb(242, 242, 242);
 height: 60px;
 line-height: 60px;
-${tw`fixed w-full`}
+${tw`fixed w-full z-10`}
 `
 const Header = styled.div`
 width:1024px;
+@media (max-width: 1024px) {
+    width:95%; 
+    padding: 0px;
+}
 ${tw`bg-gray-700 flex items-center justify-between border-b-2 border-gray m-auto py-0 px-6`} 
 `
 const Logo = styled.div`
