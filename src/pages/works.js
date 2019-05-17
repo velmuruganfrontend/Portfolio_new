@@ -7,6 +7,9 @@ import {Link, graphql, useStaticQuery} from 'gatsby'
 
 const Main = styled.main`
 width:1024px;
+@media (max-width: 1024px) {
+    width:95%
+}
 ${tw`pt-20 m-auto px-6`} 
 `
 const WorkHeading = styled.div`
@@ -20,6 +23,9 @@ ${tw`my-10 mb-0`}
 `
 const Projectseprate = styled.ul`
 ${tw`flex flex-wrap`}
+@media (max-width: 768px) {
+    display:block
+}
 li{
     flex: 0 0 50%;
     margin-bottom: 50px;
