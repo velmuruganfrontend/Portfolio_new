@@ -32,7 +32,7 @@ li{
     position: relative;
     a{
         display:block;
-        padding: 15px 10px;
+        padding: 15px 20px;
     }
     &:nth-last-child(-n+2){margin-bottom:0px}
 }
@@ -40,21 +40,46 @@ li{
 const Grid = styled.div`
 ${tw`flex`}
 small{
-    background-color: rgb(77,77,77);
     position: absolute;
-    bottom: 0;
+    background-color: rgb(77, 77, 77);
+    bottom: -22px;
     right: 0px;
-    opacity:0;
+    color: white;
+    line-height: 1.4; 
+    opacity: 0;
+    will-change: bottom, opacity;
+    z-index: 1;
+    transition-property: bottom, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    padding: 2px 6px;
     &:before{
-        content:'',
-
+        position: absolute;
+        left: -22px;
+        top: -22px;
+        content: "";
+        z-index: -1;
+        border-width: 22px;
+        border-style: solid;
+        border-color: transparent transparent rgb(77, 77, 77);
+        border-image: initial;
+        border-bottom: 22px solid rgb(77, 77, 77);
     }
 } 
 &:hover small{
-    opacity:1;
-    color: #ffffff;
-    padding: 6px;
-    border-radius: 3px;
+    position: absolute;
+    background-color: rgb(77, 77, 77);
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    line-height: 1.4; 
+    opacity: 1;
+    will-change: bottom, opacity;
+    z-index: 1;
+    transition-property: bottom, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    padding: 2px 6px; 
 } 
 `
 const Left = styled.div`
@@ -90,7 +115,7 @@ const works = () => {
     `)
     return(
         <Layout>
-           <Main>
+           <Main> 
                 <WorkHeading>
                     <h2>My Work</h2> 
                     <p>A collection of different things I have worked on.</p>
