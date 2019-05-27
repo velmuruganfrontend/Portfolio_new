@@ -5,4 +5,4 @@
  full: "descriptionfull"
 ---
 
-![Google](./images/stafftraveler_screenshot_square.jpg)  
+![Google](./images/stafftraveler_screenshot_square.jpg)   

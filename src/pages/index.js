@@ -22,6 +22,9 @@ width:640px;
  ${tw`text-center m-auto`}
 `
 const UserImage = styled.div`
+img{
+    width: 150px;height: 150px; 
+}
 img{{
     ${tw`rounded-full shadow-md p-1 bg-white`}
 }}    
