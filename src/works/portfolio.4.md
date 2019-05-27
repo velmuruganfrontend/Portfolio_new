@@ -1,8 +1,8 @@
 ---
  title: "Gatsby Tailwind CSS and Styled Components"
- date: "Sep 2017 to Aug 2018"
+ date: "Jan 2020 to Feb 2020"
  description: "Gatsby & Tailwindcss & styled-component-starterkit"
  full: "descriptionfull" 
 ---
 
-![Google](./images/stafftraveler_screenshot_square.jpg)  
+![Google](./images/stafftraveler_screenshot_square.png)  

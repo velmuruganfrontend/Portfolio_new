@@ -47,10 +47,10 @@ const Project = (props) => {
                 </NextProject>
                 <Grid>
                     <Eight>
-                      <h1>{props.data.markdownRemark.frontmatter.title} h</h1>
+                     dfgfd
                     </Eight>
                     <Four> 
-                       <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                      dfgf
                     </Four>
                 </Grid>
             </Main> 

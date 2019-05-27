@@ -90,7 +90,7 @@ const Right = styled.div`
 flex: 0 0 70%;
 ${tw`pl-4`}
 h2{color: rgb(51, 51, 51);font-weight:400}
-span{color:red} 
+span{color: rgba(0, 0, 0, 0.7);font-size: 12px;} 
 `
 
 const works = () => {
